@@ -72,51 +72,90 @@
   <main class="wrap">
     <header>
       <h1>ボドゲ一覧</h1>
-      <div class="count" id="count"></div>
+      <div class="count">11 GAME</div>
     </header>
 
-    <section class="grid" id="games"></section>
-
-    <footer>タイトルをタップするとゲームを開きます。</footer>
-  </main>
-
-  <script>
-    // 新しいゲームは、この配列に1件追加するだけです。
-    const games = [
-      {
-        title: "街コロ",
-        url: "https://machikoro-ws.naitoryo7110.workers.dev"
-      },
-      {
-        title: "宇宙カタン",
-        url: "https://starfarers-online.naitoryo7110.workers.dev"
-      },
-      {
-        title: "ニムト",
-        url: "https://nimto-online.naitoryo7110.workers.dev"
-      },
-      {
-        title: "宝石の煌き",
-        url: "https://splendor-online.naitoryo7110.workers.dev"
-      },
-      {
-        title: "大富豪",
-        url: "https://daifugo-online.naitoryo7110.workers.dev"
-      }
-    ];
-
-    const root = document.getElementById("games");
-    document.getElementById("count").textContent = `${games.length} GAME`;
-
-    root.innerHTML = games.map((game, i) => `
-      <a class="game" href="${game.url}" target="_blank" rel="noopener noreferrer">
+    <section class="grid">
+      <a class="game" href="https://machikoro-ws.naitoryo7110.workers.dev" target="_blank" rel="noopener noreferrer">
         <div>
-          <div class="tag">GAME ${String(i + 1).padStart(2, "0")}</div>
-          <div class="title">${game.title}</div>
+          <div class="tag">GAME 01</div>
+          <div class="title">街コロ</div>
         </div>
         <div class="open">タップして開く →</div>
       </a>
-    `).join("");
-  </script>
+      <a class="game" href="https://starfarers-online.naitoryo7110.workers.dev" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="tag">GAME 02</div>
+          <div class="title">宇宙カタン</div>
+        </div>
+        <div class="open">タップして開く →</div>
+      </a>
+      <a class="game" href="https://nimto-online.naitoryo7110.workers.dev" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="tag">GAME 03</div>
+          <div class="title">ニムト</div>
+        </div>
+        <div class="open">タップして開く →</div>
+      </a>
+      <a class="game" href="https://splendor-online.naitoryo7110.workers.dev" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="tag">GAME 04</div>
+          <div class="title">宝石の煌き</div>
+        </div>
+        <div class="open">タップして開く →</div>
+      </a>
+      <a class="game" href="https://daifugo-online.naitoryo7110.workers.dev" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="tag">GAME 05</div>
+          <div class="title">大富豪</div>
+        </div>
+        <div class="open">タップして開く →</div>
+      </a>
+      <a class="game" href="https://deepshellgame.github.io/hiragajan/" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="tag">GAME 06</div>
+          <div class="title">ひらがな麻雀</div>
+        </div>
+        <div class="open">タップして開く →</div>
+      </a>
+      <a class="game" href="https://deepshellgame.github.io/aiue-webgl/" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="tag">GAME 07</div>
+          <div class="title">あいうえバトル</div>
+        </div>
+        <div class="open">タップして開く →</div>
+      </a>
+      <a class="game" href="https://bordersaba.github.io/tiger-dragon/" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="tag">GAME 08</div>
+          <div class="title">タイガー＆ドラゴン</div>
+        </div>
+        <div class="open">タップして開く →</div>
+      </a>
+      <a class="game" href="https://bordersaba.github.io/Catan/" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="tag">GAME 09</div>
+          <div class="title">カタン</div>
+        </div>
+        <div class="open">タップして開く →</div>
+      </a>
+      <a class="game" href="https://bordersaba.github.io/UNO/" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="tag">GAME 10</div>
+          <div class="title">UNO</div>
+        </div>
+        <div class="open">タップして開く →</div>
+      </a>
+      <a class="game" href="https://bordersaba.github.io/scout/" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="tag">GAME 11</div>
+          <div class="title">SCOUT</div>
+        </div>
+        <div class="open">タップして開く →</div>
+      </a>
+    </section>
+
+    <footer>タイトルをタップするとゲームを開きます。</footer>
+  </main>
 </body>
 </html>

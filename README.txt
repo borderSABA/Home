@@ -1,18 +1,14 @@
-# ボドゲ一覧ページ
+ボドゲ一覧ページ v2
 
-`index.html` をそのまま GitHub Pages / Cloudflare Pages などに置けば使えます。
-
-現在登録済み:
-- 街コロ
-- 宇宙カタン
-- ニムト
-- 宝石の煌き
-- 大富豪
-
-ゲーム追加方法:
-index.html 下部の `const games = [...]` に以下の形で追加してください。
-
-{
-  title: "ゲーム名",
-  url: "https://..."
-}
+登録ゲーム:
+- 街コロ: https://machikoro-ws.naitoryo7110.workers.dev
+- 宇宙カタン: https://starfarers-online.naitoryo7110.workers.dev
+- ニムト: https://nimto-online.naitoryo7110.workers.dev
+- 宝石の煌き: https://splendor-online.naitoryo7110.workers.dev
+- 大富豪: https://daifugo-online.naitoryo7110.workers.dev
+- ひらがな麻雀: https://deepshellgame.github.io/hiragajan/
+- あいうえバトル: https://deepshellgame.github.io/aiue-webgl/
+- タイガー＆ドラゴン: https://bordersaba.github.io/tiger-dragon/
+- カタン: https://bordersaba.github.io/Catan/
+- UNO: https://bordersaba.github.io/UNO/
+- SCOUT: https://bordersaba.github.io/scout/

@@ -1,5 +1,5 @@
 // HOME only: never intercept or cache other games, ROOM traffic, or Cloudflare API.
-const CACHE_NAME = 'boardgame-home-pwa-v32-1';
+const CACHE_NAME = 'boardgame-home-pwa-v32-2';
 const HOME_ASSETS = ['./', './index.html', './hub-client.js', './pwa-install.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(HOME_ASSETS)).then(() => self.skipWaiting()));
